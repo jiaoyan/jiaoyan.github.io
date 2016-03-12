@@ -210,7 +210,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/12/life-reinstallSystem/">life_reinstallSystem</a>
+      <a class="article-title" href="/2016/03/12/life-reinstallSystem/">DELL XPS13 安装 win7 系统</a>
     </h1>
   
 
@@ -220,24 +220,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="DELL-XPS13-安装-win7-系统"><a href="#DELL-XPS13-安装-win7-系统" class="headerlink" title="DELL XPS13 安装 win7 系统"></a>DELL XPS13 安装 win7 系统</h1><p>推荐给大猪的 xps13 在升级了 win10 之后 wifi 会出现连不上的情况，<br>只有在靠近路由器的地方才能连上网，而且也会有网络时断时连得状态，更新了驱动也没有办法，所以先装个 win7 试试会不会还有这种问题</p>
-<p>[TOC]</p>
-<h2 id="制作U极速启动盘"><a href="#制作U极速启动盘" class="headerlink" title="制作U极速启动盘"></a>制作U极速启动盘</h2><p>本来下载了一个镜像，想直接用 ghost 安装系统，结果好像在 win10 下有点问题，所以干脆用U盘装<br>系统吧，选择了 <a href="http://www.ujisu.com" target="_blank" rel="external">U极速</a>，按照官网上的步骤来制作好U盘启动盘之后，<br>下载有一个 win7 的 iso 镜像文件，拷贝到U盘中，ok，系统盘就OK了</p>
-<h2 id="dell-进入-BIOS-设置"><a href="#dell-进入-BIOS-设置" class="headerlink" title="dell 进入 BIOS 设置"></a>dell 进入 BIOS 设置</h2><p>然后就是设置U盘启动，这里的设置每个厂商的笔记本有点差别，先记录下 dell 的吧。<br>开机在看到 DELL 的 logo 之后按 F2 ，进入 BIOS 设置</p>
-<p><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_01.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_03.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_02.jpg?raw=true" alt="icon"></p>
-<p>主要是修改 Boot Sequence 中的 Legacy 选项为 true 的状态，修改完成之后按 F10 保存设置，<br>然后按 F12 重启电脑</p>
-<h2 id="U盘安装系统"><a href="#U盘安装系统" class="headerlink" title="U盘安装系统"></a>U盘安装系统</h2><p>重启电脑，在出现 DELL 的 logo 的时候按 F12 进入启动选项，然后选择U盘启动，就进入了U极速的<br>系统安装界面</p>
-<p><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_04.png?raw=true" alt="icon"></p>
-<p>选 2 进入 winPE，进入系统之后会自动弹出 ghost 安装。</p>
-<h2 id="硬盘格式的问题"><a href="#硬盘格式的问题" class="headerlink" title="硬盘格式的问题"></a>硬盘格式的问题</h2><p>在选择启动 ghost 安装系统的时候提示了一个错误，</p>
-<p><strong>windows 无法安装到这个磁盘，选中的磁盘采用 GPT 分区形式，需要 MBR 分区形式</strong></p>
-<p>分区格式有问题，需要转换一下，而下面介绍的命令行的方法会格式化整个硬盘，所以一定要保存数据</p>
-<p>首先进入 cmd 界面，</p>
-<p><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_05.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_06.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_07.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_08.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_09.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_10.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_11.jpg?raw=true" alt="icon"><br><img src="https://github.com/jiaoyan/markdown-image/blob/master/dell系统安装_2016_01_30/git_12.jpg?raw=true" alt="icon"></p>
-<p>格式化成功之后重启电脑，如果不进入U盘启动，会有如下报错：</p>
-<p><strong>Invalid partition table</strong></p>
-<p>标准的磁盘分区表错误，修复办法：进入U盘启动，然后到 winPE ，使用 winPE 中默认提供的磁盘分区工具，<br>修复磁盘分区，并且将C盘设置为主分区。然后重启再次进入 winPE，再次弹出 ghost 安装，这个时候<br>选择C盘安装就没有问题了，之后就是简单的下载安装驱动了</p>
-
+              关于在dell xps13 下重装系统的问题
+          
       
     </div>
     
@@ -255,66 +239,9 @@
     </div>
 
       
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/12/hello-world/" class="article-date">
-      <time datetime="2016-03-11T17:03:35.033Z" itemprop="datePublished">2016-03-12</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/12/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
+        <p class="article-more-link">
+          <a  href="/2016/03/12/life-reinstallSystem/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
